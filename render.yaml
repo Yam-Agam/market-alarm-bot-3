@@ -1,0 +1,10 @@
+
+services:
+  - type: worker
+    name: market-alert-bot
+    runtime: python
+    repo: https://github.com/Yam-Agam/market-alert-bot
+    buildCommand: pip install -r requirements.txt
+    startCommand: python market_crypto_alerts_with_news.py
+    branch: main
+    autoDeploy: true
